@@ -12,7 +12,7 @@ from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 
 """bot credentials"""
 TOKEN = '5522846609:AAG4AM_8c_S7RHpruQJKbOugjUmRImb2qbU'
-PORT = int(os.environ.get('PORT', 8083))
+PORT = int(os.environ.get('PORT', 8433))
 BOT_USER_NAME = 'Buddy1234_bot'
 URL = "https://buddy-1234.herokuapp.com/"
 
