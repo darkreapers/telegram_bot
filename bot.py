@@ -34,7 +34,19 @@ def help_command(update, context):
 
 def subject_list(update, context):
     """When list is hit"""
-    update.message.reply_text('1)Power system \n 2)Mahines /n 3)Power Electronics /n 4)Network /n 5)Control System /n')
+    update.message.reply_text(' 1)Power system \n 2)Machines \n 3)Power Electronics \n 4)Network \n 5)Control System \n 6)EMFT \n 7)Signal and System \n 8)Analog Electronics \n 9)Digital Electronics \n 10)Measurements \n 11)Materials\n 12)Communication System \n 13)Microprocessor \n 14)Mathematics')
+
+def Power_system(update, context):
+   """When /1 is hit"""
+   update.message.reply_text('https://drive.google.com/file/d/1D2AigSJW1xFTNUUS6FBsaRd7bgZys9NJ/view?usp=sharing')
+
+def Machines(update, context):
+   """When /2 is hit"""
+   update.message.reply_text('https://drive.google.com/file/d/1N3NGdXMKs5az11Pw5YSABwm7xL1rvepK/view?usp=sharing')
+
+def Power_Electronics(update, context):
+   """When /3 is hit"""
+   update.message.reply_text('https://drive.google.com/file/d/1a7qqu5fIbBmLZpz9ejNefONqnIRPlFh3/view?usp=sharing')
 
 def echo(update, context):
    """Echo the user message."""
@@ -57,6 +69,20 @@ def main():
     dp.add_handler(CommandHandler("start",start))
     dp.add_handler(CommandHandler("help",help_command))
     dp.add_handler(CommandHandler("list",subject_list))
+    dp.add_handler(CommandHandler("1",Power_system))
+    dp.add_handler(CommandHandler("2",Machines))
+    dp.add_handler(CommandHandler("3",Power_Electronics))
+    dp.add_handler(CommandHandler("4",start))
+    dp.add_handler(CommandHandler("5",start))
+    dp.add_handler(CommandHandler("6",start))
+    dp.add_handler(CommandHandler("7",start))
+    dp.add_handler(CommandHandler("8",start))
+    dp.add_handler(CommandHandler("9",start))
+    dp.add_handler(CommandHandler("10",start))
+    dp.add_handler(CommandHandler("11",start))
+    dp.add_handler(CommandHandler("12",start))
+    dp.add_handler(CommandHandler("13",start))
+    dp.add_handler(CommandHandler("14",start))
     #registering Message Handler to reply to user
     #starting the bot
     updater.start_polling()
