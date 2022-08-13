@@ -34,7 +34,7 @@ def help_command(update, context):
 
 def subject_list(update, context):
     """When list is hit"""
-    update.message.reply_text('1)Power system /n 2)Mahines /n 3)Power Electronics /n 4)Network /n 5)Control System /n')
+    update.message.reply_text('1)Power system \n 2)Mahines /n 3)Power Electronics /n 4)Network /n 5)Control System /n')
 
 def echo(update, context):
    """Echo the user message."""
