@@ -32,6 +32,10 @@ def help_command(update, context):
    """When /help is hit"""
    update.message.reply_text('Help!')
 
+def google_url(update, context):
+    """When /google is hit"""
+    update.message.reply_text('https://www.google.co.in/')
+
 def echo(update, context):
    """Echo the user message."""
    update.message.reply_text('Welcome')
@@ -52,6 +56,7 @@ def main():
     #registering commands
     dp.add_handler(CommandHandler("start",start))
     dp.add_handler(CommandHandler("help",help_command))
+    dp.add_handler(CommandHandler("google",google_url))
     #registering Message Handler to reply to user
     #starting the bot
     updater.start_polling()
