@@ -30,7 +30,7 @@ def start(update, context):
 
 def help_command(update, context):
    """When /help is hit"""
-   update.message.reply_text('use /start to start the buddy \n use /list to get list of subject of which notes are available \n To get link of any notes write /(respective no. of subject)')
+   update.message.reply_text(' 1)use /start to start the buddy \n 2)use /list to get list of subject of which notes are available \n 3)To get link of any notes write /(respective no. of subject)')
 
 def subject_list(update, context):
     """When list is hit"""
