@@ -35,8 +35,12 @@ def help_command(update, context):
    rules+= '3)To get link of any notes write /(list no.) ,Ex:- /12'
    update.message.reply_text(rules)
 
-def subject_list(update, context):
-    """When /list is hit"""
+def Branch_list(update, context):
+   """When /list is hit"""
+   update.message.reply_text('1)Electrical Engineering')
+
+def Electrical_list(update, context):
+    """When /Electrical_list is hit"""
     response = '1)Power system \n'
     response+= '2)Machines \n'
     response+= '3)Power Electronics \n'
@@ -129,7 +133,8 @@ def main():
     #registering commands
     dp.add_handler(CommandHandler("start",start))
     dp.add_handler(CommandHandler("help",help_command))
-    dp.add_handler(CommandHandler("list",subject_list))
+    dp.add_handler(CommandHandler("list",Branch_list))
+    dp.add_handler(CommandHandler("Electrical",Electrical_list))
     dp.add_handler(CommandHandler("1",Power_system))
     dp.add_handler(CommandHandler("2",Machines))
     dp.add_handler(CommandHandler("3",Power_Electronics))
