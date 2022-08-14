@@ -34,7 +34,7 @@ def help_command(update, context):
 
 def subject_list(update, context):
     """When /list is hit"""
-    update.message.reply_text(' 1)Power system \n 2)Machines \n 3)Power Electronics \n 4)Network \n 5)Control System \n 6)EMFT \n 7)Signal and System \n 8)Analog Electronics \n 9)Digital Electronics \n 10)Measurements \n 11)Materials\n 12)Communication System \n 13)Microprocessor \n 14)Mathematics')
+    update.message.reply_text(' 1)Power system \n2)Machines \n3)Power Electronics \n4)Network \n5)Control System \n6)EMFT \n7)Signal and System \n8)Analog Electronics \n9)Digital Electronics \n10)Measurements \n11)Materials \n12)Communication System \n13)Microprocessor \n14)Mathematics')
 
 def Power_system(update, context):
    """When /1 is hit"""
@@ -111,7 +111,7 @@ def main():
     
     #registering commands
     dp.add_handler(CommandHandler("start",start))
-    dp.add_handler(CommandHandler("hi",help_command))
+    dp.add_handler(CommandHandler("help",help_command))
     dp.add_handler(CommandHandler("list",subject_list))
     dp.add_handler(CommandHandler("1",Power_system))
     dp.add_handler(CommandHandler("2",Machines))
