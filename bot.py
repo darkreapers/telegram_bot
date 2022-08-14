@@ -31,8 +31,9 @@ def start(update, context):
 def help_command(update, context):
    """When /help is hit"""
    rules = '1)use /start to start the buddy \n'
-   rules+= '2)use /list to get list of subject of which notes are available \n'
-   rules+= '3)To get link of any notes write /(list no.) ,Ex:- /12'
+   rules+= '2)use /list to get list of Branches of which notes are available \n'
+   rules+= '3)use /Electrical to get list of subjects of which notes are available \n'
+   rules+= '4)To get link of any notes write /(list no.) ,Ex:- /12'
    update.message.reply_text(rules)
 
 def Branch_list(update, context):
