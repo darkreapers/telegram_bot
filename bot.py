@@ -11,9 +11,9 @@ from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 #from wit import Wit
 
 """bot credentials"""
-TOKEN = '5522846609:AAG4AM_8c_S7RHpruQJKbOugjUmRImb2qbU'
+TOKEN = '5590521249:AAEYUE7lH57wf_VQsc7BD9R5oP2j94-M9I0'
 PORT = int(os.environ.get('PORT', 8433))
-BOT_USER_NAME = 'Buddy1234_bot'
+BOT_USER_NAME = 'IES_PREP_bot'
 URL = "https://buddy-1234.herokuapp.com/"
 
 """ai token"""
