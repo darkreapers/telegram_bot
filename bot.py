@@ -12,7 +12,7 @@ from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 
 """bot credentials"""
 TOKEN = '5590521249:AAEYUE7lH57wf_VQsc7BD9R5oP2j94-M9I0'
-PORT = int(os.environ.get('PORT', 443))
+PORT = int(os.environ.get('PORT', '8443'))
 BOT_USER_NAME = 'IES_PREP_bot'
 URL = "https://buddy-1234.herokuapp.com/"
 
@@ -152,10 +152,10 @@ def main():
     dp.add_handler(CommandHandler("14",Maths))
     #registering Message Handler to reply to user
     #starting the bot
-    updater.start_webhook(listen = "0.0.0.0",
-                         port = int(PORT),
-                         url_path = TOKEN)
-    updater.bot.set_webhook(URL+TOKEN)
+    updater.start_webhook(listen="0.0.0.0",
+                      port=PORT,
+                      url_path=TOKEN,
+                      webhook_url=URL + TOKEN)
     updater.idle()
 
 if __name__ == '__main__':
