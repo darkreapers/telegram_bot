@@ -33,7 +33,7 @@ def help_command(update, context):
    update.message.reply_text('1)use /start to start the buddy \n2)use /list to get list of subject of which notes are available \n3)To get link of any notes write /(respective no. of subject)')
 
 def subject_list(update, context):
-    """When list is hit"""
+    """When /list is hit"""
     update.message.reply_text(' 1)Power system \n 2)Machines \n 3)Power Electronics \n 4)Network \n 5)Control System \n 6)EMFT \n 7)Signal and System \n 8)Analog Electronics \n 9)Digital Electronics \n 10)Measurements \n 11)Materials\n 12)Communication System \n 13)Microprocessor \n 14)Mathematics')
 
 def Power_system(update, context):
@@ -105,6 +105,7 @@ def echo(update, context):
 def main():
     """starting bot"""
     updater = Updater(TOKEN, use_context=True)
+    help_command()
  
     #getting the dispatchers to register handlers
     dp = updater.dispatcher
