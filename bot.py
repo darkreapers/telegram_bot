@@ -34,7 +34,21 @@ def help_command(update, context):
 
 def subject_list(update, context):
     """When /list is hit"""
-    update.message.reply_text(' 1)Power system \n2)Machines \n3)Power Electronics \n4)Network \n5)Control System \n6)EMFT \n7)Signal and System \n8)Analog Electronics \n9)Digital Electronics \n10)Measurements \n11)Materials \n12)Communication System \n13)Microprocessor \n14)Mathematics')
+    response = '1)Power system \n'
+    response+= '2)Machines \n'
+    response+= '3)Power Electronics \n'
+    response+= '4)Network \n'
+    response+= '5)Control System \n'
+    response+= '6)EMFT \n'
+    response+= '7)Signal and System \n'
+    response+= '8)Analog Electronics \n'
+    response+= '9)Digital Electronics \n'
+    response+= '10)Measurements \n'
+    response+= '11)Materials \n'
+    response+= '12)Microprocessor \n'
+    response+= '13)Communication System \n'
+    response+= '14)Mathematics \n'
+    update.message.reply_text(response)
 
 def Power_system(update, context):
    """When /1 is hit"""
