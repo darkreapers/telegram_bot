@@ -105,14 +105,13 @@ def echo(update, context):
 def main():
     """starting bot"""
     updater = Updater(TOKEN, use_context=True)
-    help_command()
  
     #getting the dispatchers to register handlers
     dp = updater.dispatcher
     
     #registering commands
     dp.add_handler(CommandHandler("start",start))
-    dp.add_handler(CommandHandler("help",help_command))
+    dp.add_handler(CommandHandler("hi",help_command))
     dp.add_handler(CommandHandler("list",subject_list))
     dp.add_handler(CommandHandler("1",Power_system))
     dp.add_handler(CommandHandler("2",Machines))
